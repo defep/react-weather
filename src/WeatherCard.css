@@ -1,0 +1,25 @@
+.weather-card {
+    width: 90px;
+    margin:10px;
+    padding: 5px;
+    float: left;
+}
+
+.weather-day {
+    margin:0px;
+    text-align: center;
+}
+
+.weather-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 70px;
+    margin-bottom: 8px;
+}
+
+.temperature {
+    margin:0px;
+    text-align: center;
+}
