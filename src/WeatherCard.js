@@ -25,7 +25,7 @@ class WeatherCard extends Component {
         return (
             <div className="weather-card">
                 <p className="weather-day">{this.props.day}</p>
-                <img className="weather-icon" src={this.weather_icon}></img>
+                <img className="weather-icon" alt="weather" src={this.weather_icon}></img>
                 <p className="temperature">
                     {this.props.minTemp}°
                     / {this.props.maxTemp}

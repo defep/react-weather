@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import WeatherCard from './WeatherCard';
+import Axios from 'axios';
 import './WeatherCardList.css'
 
 class WeatherCardList extends Component {
@@ -17,6 +18,12 @@ class WeatherCardList extends Component {
             ],
             active: 0
         }
+    }
+
+    componentDidMount() {
+        Axios.get('https://api.openweathermap.org/data/2.5/forecast?lat=-34.603722&lon=-58.381592&appid=' + process.env.REACT_APP_API_KEY).then(res => {
+            console.log(res.data);
+        });
     }
 
     getRandomMinTemp() {
